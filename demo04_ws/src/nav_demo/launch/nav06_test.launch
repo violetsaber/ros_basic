@@ -1,0 +1,13 @@
+<launch>
+    <include file="$(find nav_demo)/launch/nav03_map_server.launch" />
+    <!-- 启动AMCL节点 启动定位的launch的文件-->
+    <include file="$(find nav_demo)/launch/nav04_amcl.launch" />
+
+    <!-- 运行move_base节点 -->
+    <include file="$(find nav_demo)/launch/nav05_path.launch" />
+    <!-- 运行rviz -->
+    <node pkg="rviz" type="rviz" name="rviz"  args="-d $(find nav_demo)/nav_config/nav02rviz.rviz"  />
+    <node pkg="joint_state_publisher" name="joint_state_publisher" type="joint_state_publisher" />
+    <node pkg="robot_state_publisher" name="robot_state_publisher" type="robot_state_publisher" />
+
+</launch>

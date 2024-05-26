@@ -1,0 +1,7 @@
+<launch>
+<!--启动节点 -->
+<node pkg="plumbing_pub_sub" type="demo01_pub" name="my_turtle"  output="screen" />
+<!--pgk是包名   type是具体的文件的别名  节点类型 name 我设置的节点名称 output日志输出到那里  -->
+<node pkg="plumbing_pub_sub" type="demo02_sub" name="my_key"  output="screen" />
+
+</launch >

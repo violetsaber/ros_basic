@@ -1,0 +1,12 @@
+<launch>
+<!--启动两个乌龟的gui和 键盘控制-->
+    <group ns="fisrt">
+        <node pkg="turtlesim" type="turtlesim_node" name="my_turtle"  output="screen" />
+        <node pkg="turtlesim" type="turtle_teleop_key" name="my_key"  output="screen" />
+    </group>
+    <!--ns 是一个命名空间  -->
+    <group ns="second">
+        <node pkg="turtlesim" type="turtlesim_node" name="my_turtle"  output="screen" />
+        <node pkg="turtlesim" type="turtle_teleop_key" name="my_key"  output="screen" />
+    </group>
+</launch>

@@ -1,0 +1,11 @@
+<launch>
+    <!--设置多个参数 -->
+    <!-- <param name="A" type="double" value="0.5" />
+    <param name="B" type="double" value="0.5" />
+    <param name="C" type="double" value="0.5" /> -->
+    <arg name="car_length"  default="0.5" />
+    <!--这个是使用arg的参数-->
+    <param name="A" type="double" value="$(arg car_length)" />
+    <param name="B" type="double" value="$(arg car_length)" />
+    <param name="C" type="double" value="$(arg car_length)" />
+</launch>

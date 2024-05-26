@@ -1,0 +1,13 @@
+<!--  启动乌龟gui和键盘控制节点  -->
+<launch>
+<!--  启动乌龟gui  -->
+<!--报名     定义的别名就算add_execute第一个参数  之后name最定义的 output输出到哪里-->
+<node pkg="turtlesim" type="turtlesim_node" name="turtle1"  output="screen"/>
+<!--  启动键盘控制节点  -->
+<node pkg="turtlesim" type="turtle_teleop_key" name="key" output="screen"/>
+
+
+</launch>
+
+
+

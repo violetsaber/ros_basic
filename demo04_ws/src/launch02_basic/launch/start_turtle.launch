@@ -1,0 +1,18 @@
+<launch deprecated="舍用说明 这个是注释说明这个文件除了什么问题">
+<!--启动节点 -->
+<param name="param_a" type="int" value="100" />
+<rosparam command="load" file="$(find launch02_basic)/launch/param.yaml"  />
+<rosparam command="dump" file="$(find launch02_basic)/launch/param1.yaml"  />
+<rosparam command="delete" param="/bgb"  />
+<node pkg="turtlesim" type="turtlesim_node" name="my_turtle"  output="screen" >
+    <remap from="/turtle1/cmd_vel" to="/cmd_vel"/>
+    <param name="param_b" type="double" value="3.14" />
+    <rosparam command="load" file="$(find launch02_basic)/launch/param.yaml"  />
+     
+</node>
+
+
+<!--pgk是包名   type是具体的文件的别名  节点类型 name 我设置的节点名称 output日志输出到那里  -->
+<node pkg="turtlesim" type="turtle_teleop_key" name="my_key"  output="screen" />
+
+</launch >

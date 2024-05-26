@@ -1,0 +1,2 @@
+demo01_action:demo02_dr:hello_class2d:helloclass:launch01_basic:launch02_basic:nav_demo:plumbing_apis:plumbing_head:plumbing_head_src:plumbing_my:plumbing_param_server:plumbing_pub_sub:plumbing_pub_sub_doublemsg:plumbing_server_client:plumbing_test:rename02_topic:rename03_param:rosbag_demo:tf01_static:tf04_test:tf2_dynamic:tf3_tfs:urdf01_rviz:urdf02_gazebo
+-DCATKIN_DEVEL_PREFIX=/home/qinghuan/env_cv/demo04_ws/devel -DCMAKE_INSTALL_PREFIX=/home/qinghuan/env_cv/demo04_ws/install -G Unix Makefiles

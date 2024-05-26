@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo04_ws/devel
+
+Name: launch02_basic
+Description: Description of launch02_basic
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

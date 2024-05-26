@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find launch02_basic)/launch/start_launch_p_spawn.launch" />
+    <!--启动其他需要的节点-->
+
+</launch>

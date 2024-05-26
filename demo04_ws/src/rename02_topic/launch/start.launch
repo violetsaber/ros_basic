@@ -1,0 +1,7 @@
+<launch>
+<!--改其中一个节点的话题   与另一个节点的话题 一致就ok 改谁都性-->
+<node  pkg="turtlesim" type="turtlesim_node" name="t1" >
+    <remap from="/turtle1/cmd_vel" to="/cmd_vel" />
+</node>
+<node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="key1" />
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo04_ws/install
+
+Name: helloclass
+Description: Description of helloclass
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

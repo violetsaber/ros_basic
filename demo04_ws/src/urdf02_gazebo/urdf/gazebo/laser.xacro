@@ -1,0 +1,45 @@
+<robot name="my_sensors" xmlns:xacro="http://wiki.ros.org/xacro">
+
+  <!-- 雷达  这个是贴到 一个机器人的模块上， 我们这个是个雷达 让这个东西 与 robot 中的link  贴上去， 这个link就有 雷达的功能
+  reference 这个 是说明 我们是针对我们demo05_car_base.urdf.xacro的一个laser名字的link  这个要保证我们的名字是一样的
+  我们的创建机器人 之后我们有个物体是雷达， 在单纯的emo05_car_base.urdf.xacro  我们只是一个物体， 这个文件是说明这个物体的功能， 这样就创建了一个雷达
+  连接的方式 这个雷达的这个功能 与  robot的物体的名字 一样  
+  -->
+  <gazebo reference="laser">
+  <!-- 定义类型 传感器 类型是雷达 name是名字 psoe是雷达的位置  x y z  欧拉较 x y z的角度 -->
+    <sensor type="ray" name="rplidar">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize><!-- 是否显示雷达射线 -->
+      <update_rate>5.5</update_rate> <!-- 设置一个数据雷达数据的更新频率  5.5次秒-->
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples> <!-- 旋转一周360个射线发射 -->
+            <!-- resolution 分辨率 每1个射线都是测距的 -->
+            <resolution>1</resolution> 
+            <!-- 雷达的采样范围    单位是弧度  1圈 2.8的弧度   -3到 +3 的弧度  以中轴为界限 是 向左转3个弧度   +3是向右转3个弧度  在-->
+            <min_angle>-3</min_angle>
+            <max_angle>3</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+       <!--  雷达的有效范围  0.1，30米的范围内   采样的距离精度  距离保留后两位 是 0.01 -->
+          <min>0.10</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+        <!-- 模拟 真实雷达的数据  我们人为的添加噪音 -->
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_rplidar" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName> <!-- 这个topic的name 发布的雷达消息 是通过 /scan 发布雷达的数据 -->
+        <frameName>laser</frameName><!--  坐标系 的名字 是 link的名字是一样的 -->
+      </plugin>
+    </sensor>
+  </gazebo>
+
+</robot>

@@ -1,0 +1,6 @@
+<launch deprecated="舍用说明 这个是注释说明这个文件除了什么问题">
+
+<rosparam command="delete" param="bgb"  />
+
+
+</launch >

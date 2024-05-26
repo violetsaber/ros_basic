@@ -1,0 +1,22 @@
+<launch>
+    <!--启动turtlesim 生成一个新的乌龟-->
+    <!--name 相当于namespcae-->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle1" output="screen"    />
+    <node pkg="tf04_test" type="test01_new_turtle" name="turtle2" output="screen"    />
+    <node pkg="turtlesim" type="turtle_teleop_key" name="key" output="screen"    />
+    <!--需要启动两个乌龟 相对与 世界的坐标关系的发布   
+    1、节点只编写一个
+    2、代码都一样 节点的名字不一样 
+    3、节点需要启动两次
+    4、节点启动时 我们动态传参 第一次传turtle1  第二次传入 trutle2
+
+    -->
+    <node pkg="tf04_test" type="test02_pub_turtle" name="pub1"  args="turtle1" output="screen"    />
+    <node pkg="tf04_test" type="test02_pub_turtle" name="pub2"  args="turtle2" output="screen"    />
+    <!--
+        订阅turtle1和turtle2的tf2 坐标系信息
+        将turtle1转化为turtle2坐标系的位置信息
+        并生成速度信息
+    -->
+    <node pkg="tf04_test" type="test03_control_turtle2" name="control" output="screen"    />
+</launch>

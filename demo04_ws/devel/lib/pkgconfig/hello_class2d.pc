@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo04_ws/devel
+
+Name: hello_class2d
+Description: Description of hello_class2d
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

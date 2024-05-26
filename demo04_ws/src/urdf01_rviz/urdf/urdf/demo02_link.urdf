@@ -1,0 +1,24 @@
+<robot name="mycar">
+<!--可视化isual -->
+    <link name="base_link" >
+        <visual>
+            <geometry>
+                <!-- <box  size="0.3  0.2  0.1" /> -->
+                <!-- <cylinder  radius="0.1"  length="2" /> -->
+                <mesh filename = "package://urdf01_rviz/meshes/sim_demo-main/autolabor_mini.stl" />
+
+
+            </geometry>
+            <origin xyz="2 3  4" rpy="1.57 0 1.57 " />
+
+            <material name="carcolar">
+            <!-- 取值的范围【0.1】红绿蓝透明度  -->
+                <color rgba="0.5 0.2 0.3 0.5" />
+            </material>
+
+        </visual>
+    </link>
+
+
+
+</robot>

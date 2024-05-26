@@ -1,0 +1,7 @@
+<launch>
+<!-- 在参数服务器 导入 urdf文件 -->
+<!-- name是固定的 textfile 指向urdf文件  我们的功能包名字是ufdf01_rviz 在urdf/urdf文件夹下面的文件 urdf 和后面要有空格-->
+<param name="robot_description" textfile="$(find urdf01_rviz)/urdf/urdf/demo02_link.urdf" />
+<node pkg="rviz" type="rviz" name="rviz" args="-d $(find urdf01_rviz)/config/show_mycar.rviz" />
+
+</launch>

@@ -1,0 +1,15 @@
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_qinghuan_system_product_name__43419: http://qinghuan-System-Product-Name:43419/
+    host_qinghuan_system_product_name__44387: http://qinghuan-System-Product-Name:44387/
+rosversion: '1.16.0
+
+  '
+run_id: 5eab3fee-f221-11ee-a4ea-2b8ea106113b
+turtlesim:
+  background_b: 255
+  background_g: 86
+  background_r: 69

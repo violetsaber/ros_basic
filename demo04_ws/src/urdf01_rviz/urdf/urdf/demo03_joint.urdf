@@ -1,0 +1,50 @@
+<!-- 
+    需求: 创建机器人模型，底盘为长方体，
+         在长方体的前面添加一摄像头，
+         摄像头可以沿着 Z 轴 360 度旋转
+
+ -->
+ <!-- 底盘 -->
+<robot name="mycar">
+    <!-- 底盘 -->
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.5 0.2 0.1" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="blue">
+                <color rgba="0 0 1.0 0.5" />
+            </material>
+        </visual>
+    </link>
+
+    <!-- 摄像头 -->
+    <!-- 位置的0，0，0是 物体的中心点 -->
+    <link name="camera">
+        <visual>
+            <geometry>
+                <box size="0.02 0.05 0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="red">
+                <color rgba="1 0 0 0.5" />
+            </material>
+        </visual>
+    </link>
+
+    <!-- 关节 -->
+    <!-- 
+        关节包含 名字和类型 name  和 绕一个轴旋转 
+    parent 是运动付 基于哪个坐标系  child 是连接哪个 link 
+    origin 是设置 joint相对 parent link的位置信息， 相对与 link中心点  xyz 是 位置信息 rpy
+    -->
+    <joint name="camera2baselink" type="continuous">
+        <parent link="base_link"/>
+        <child link="camera" />
+        <!-- 需要计算两个 link 的物理中心之间的偏移量 -->
+        <origin xyz="0.2 0 0.075" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+</robot>
