@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qinghuan/env_cv/demo06_ws/src/Pid_pathtracking/include/Pid_pathtracking/PID_controller.h
+iostream
+-
+vector
+-
+cmath
+-
+algorithm
+-
+eigen3/Eigen/Dense
+-
+
+/home/qinghuan/env_cv/demo06_ws/src/Pid_pathtracking/src/PID_controller.cpp
+Pid_pathtracking/PID_controller.h
+/home/qinghuan/env_cv/demo06_ws/src/Pid_pathtracking/src/Pid_pathtracking/PID_controller.h
+

@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo06_ws/devel
+
+Name: rear_wheel2
+Description: Description of rear_wheel2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs Kinematic_package

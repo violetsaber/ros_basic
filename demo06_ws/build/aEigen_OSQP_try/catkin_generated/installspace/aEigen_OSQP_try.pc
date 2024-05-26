@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo06_ws/install
+
+Name: aEigen_OSQP_try
+Description: Description of aEigen_OSQP_try
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

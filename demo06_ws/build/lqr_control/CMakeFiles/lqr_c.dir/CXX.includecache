@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qinghuan/env_cv/demo06_ws/src/lqr_control/include/lqr_control/lqr_c.h
+iostream
+-
+vector
+-
+eigen3/Eigen/Dense
+-
+
+/home/qinghuan/env_cv/demo06_ws/src/lqr_control/src/lqr_c.cpp
+lqr_control/lqr_c.h
+/home/qinghuan/env_cv/demo06_ws/src/lqr_control/src/lqr_control/lqr_c.h
+

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qinghuan/env_cv/demo06_ws/src/stanley_control/include/stanley_control/stanley.h
+iostream
+-
+vector
+-
+cmath
+-
+algorithm
+-
+
+/home/qinghuan/env_cv/demo06_ws/src/stanley_control/src/stanley.cpp
+stanley_control/stanley.h
+/home/qinghuan/env_cv/demo06_ws/src/stanley_control/src/stanley_control/stanley.h
+

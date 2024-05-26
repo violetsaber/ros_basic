@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo06_ws/install
+
+Name: Kinematic_package
+Description: Description of Kinematic_package
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

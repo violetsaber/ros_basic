@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qinghuan/env_cv/demo06_ws/src/Pid_pathtracking/include/Pid_pathtracking/Myreference.h
+iostream
+-
+vector
+-
+cmath
+-
+
+/home/qinghuan/env_cv/demo06_ws/src/Pid_pathtracking/src/Myreference.cpp
+Pid_pathtracking/Myreference.h
+/home/qinghuan/env_cv/demo06_ws/src/Pid_pathtracking/src/Pid_pathtracking/Myreference.h
+

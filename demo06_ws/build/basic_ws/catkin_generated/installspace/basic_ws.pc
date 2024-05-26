@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo06_ws/install
+
+Name: basic_ws
+Description: Description of basic_ws
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

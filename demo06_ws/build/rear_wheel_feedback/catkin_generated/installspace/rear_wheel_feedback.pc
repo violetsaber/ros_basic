@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo06_ws/install
+
+Name: rear_wheel_feedback
+Description: Description of rear_wheel_feedback
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs tf2 tf2_ros Kinematic_package

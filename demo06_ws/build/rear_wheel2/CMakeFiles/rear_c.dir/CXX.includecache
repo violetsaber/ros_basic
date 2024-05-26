@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qinghuan/env_cv/demo06_ws/src/rear_wheel2/include/rear_wheel2/rear_c.h
+iostream
+-
+vector
+-
+algorithm
+-
+cmath
+-
+
+/home/qinghuan/env_cv/demo06_ws/src/rear_wheel2/src/rear_c.cpp
+rear_wheel2/rear_c.h
+/home/qinghuan/env_cv/demo06_ws/src/rear_wheel2/src/rear_wheel2/rear_c.h
+

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qinghuan/env_cv/demo06_ws/src/Kinematic_package/include/Kinematic_package/mul_remap.h
+iostream
+-
+
+/home/qinghuan/env_cv/demo06_ws/src/Kinematic_package/src/mul_remap.cpp
+Kinematic_package/mul_remap.h
+/home/qinghuan/env_cv/demo06_ws/src/Kinematic_package/src/Kinematic_package/mul_remap.h
+

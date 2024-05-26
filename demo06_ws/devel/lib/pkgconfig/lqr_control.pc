@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo06_ws/devel
+
+Name: lqr_control
+Description: Description of lqr_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs Kinematic_package util_reference

@@ -1,0 +1,2 @@
+Kinematic_package:Pid_pathtracking:Pure_pursuit:aEigen_OSQP_try:a_ccpad_ipopt:basic_ws:lqr_control:rear_wheel2:rear_wheel_feedback:stanley_control:util_reference
+-DCATKIN_DEVEL_PREFIX=/home/qinghuan/env_cv/demo06_ws/devel -DCMAKE_INSTALL_PREFIX=/home/qinghuan/env_cv/demo06_ws/install -G Unix Makefiles

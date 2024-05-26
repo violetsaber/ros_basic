@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo06_ws/devel
+
+Name: util_reference
+Description: Description of util_reference
+Version: 0.0.0
+Cflags: -I/home/qinghuan/env_cv/demo06_ws/src/util_reference/include
+Libs: -L${prefix}/lib 
+Requires: 

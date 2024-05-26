@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qinghuan/env_cv/demo06_ws/src/aEigen_OSQP_try/src/solve3_c.cpp
+iostream
+-
+eigen3/Eigen/Dense
+-
+iostream
+-
+OsqpEigen/OsqpEigen.h
+-
+

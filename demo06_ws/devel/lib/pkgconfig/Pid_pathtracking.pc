@@ -1,0 +1,8 @@
+prefix=/home/qinghuan/env_cv/demo06_ws/devel
+
+Name: Pid_pathtracking
+Description: Description of Pid_pathtracking
+Version: 0.0.0
+Cflags: -I/home/qinghuan/env_cv/demo06_ws/src/Pid_pathtracking/include
+Libs: -L${prefix}/lib 
+Requires: 

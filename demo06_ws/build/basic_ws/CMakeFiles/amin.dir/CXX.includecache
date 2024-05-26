@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qinghuan/env_cv/demo06_ws/src/basic_ws/src/amin.cpp
+matplotlibcpp.h
+/home/qinghuan/env_cv/demo06_ws/src/basic_ws/src/matplotlibcpp.h
+cmath
+-
+

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qinghuan/env_cv/demo06_ws/src/Kinematic_package/include/Kinematic_package/KinematicModel.h
+iostream
+-
+vector
+-
+cmath
+-
+eigen3/Eigen/Dense
+/home/qinghuan/env_cv/demo06_ws/src/Kinematic_package/include/Kinematic_package/eigen3/Eigen/Dense
+
+/home/qinghuan/env_cv/demo06_ws/src/Kinematic_package/src/KinematicModel.cpp
+Kinematic_package/KinematicModel.h
+/home/qinghuan/env_cv/demo06_ws/src/Kinematic_package/src/Kinematic_package/KinematicModel.h
+

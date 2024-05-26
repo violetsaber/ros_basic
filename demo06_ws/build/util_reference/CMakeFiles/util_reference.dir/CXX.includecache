@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qinghuan/env_cv/demo06_ws/src/util_reference/include/util_reference/uti_my_reference.h
+iostream
+-
+cmath
+-
+vector
+-
+eigen3/Eigen/Dense
+/home/qinghuan/env_cv/demo06_ws/src/util_reference/include/util_reference/eigen3/Eigen/Dense
+algorithm
+-
+
+/home/qinghuan/env_cv/demo06_ws/src/util_reference/src/uti_my_reference.cpp
+util_reference/uti_my_reference.h
+/home/qinghuan/env_cv/demo06_ws/src/util_reference/src/util_reference/uti_my_reference.h
+
