@@ -1,0 +1,8 @@
+<launch>
+
+<!-- 执行的节点   pkg报名  type节点名字  name 自定义名字-->
+<!--node 表示节点 pkg是包名  type是节点名字 是c中136 的参数0   name是自定义的名字  ·如果要把数据输出到screem中  output 设置成screen-->
+<node pkg="turtlesim" type="turtlesim_node"      name="turtle_GUI" />
+<node pkg="turtlesim" type="turtle_teleop_key"   name="turtle_key" />
+<node pkg="hello_vscode" type="hello_vscode_c"   name="hello"  output="screen" />
+</launch> 
